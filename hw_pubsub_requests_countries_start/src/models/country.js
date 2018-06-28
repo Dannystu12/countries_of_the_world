@@ -17,4 +17,8 @@ Country.prototype.bindEvents = function () {
   });
 };
 
+Country.prototype.getCountries = function () {
+  return this.countries;
+};
+
 module.exports = Country;

@@ -1,20 +1,20 @@
-const LanguagesView = function(container) {
+const BordersView = function(container) {
   this.container = container;
 };
 
-LanguagesView.prototype.render = function (languages) {
+BordersView.prototype.render = function (borders) {
   this.container.innerHTML = '';
   const heading = document.createElement('h2');
-  heading.textContent = 'Languages';
+  heading.textContent = 'Borders';
   this.container.appendChild(heading);
 
   const listTag = document.createElement('ul');
-  for(const language of languages){
+  for(const border of borders){
       const listItem = document.createElement('li');
-      listItem.appendChild(document.createTextNode(language.name));
+      listItem.appendChild(document.createTextNode(border));
       listTag.appendChild(listItem);
   }
   this.container.appendChild(listTag);
 };
 
-module.exports = LanguagesView;
+module.exports = BordersView;

@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
   country.bindEvents();
 
   const container = document.querySelector('#country');
-  const resultView = new ResultView(container);
+  const resultView = new ResultView(container, country);
   resultView.bindEvents();
 });
